@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>{% block title %}Simple web application{% endblock %}</title>
+</head>
+<body>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+</body>
+</html>
