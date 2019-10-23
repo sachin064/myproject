@@ -8,13 +8,22 @@ body{
 .centered-form .panel{
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+	border-radius: 10px;
 }
 .panel-heading {
     color: #333;
     background-color: #f5f5f5;
     border-color: #ddd;
     text-align: center;
+    border-radius: 10px;
 }
 .panel-title{
     text-align:center;
+}
+.form-group{
+    borde-radius:10px;
+}
+.border-secondary{
+    border-color: #6c757d!important;
+    border-radius: 9px;
 }
