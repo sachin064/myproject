@@ -12,25 +12,34 @@
                             <h3 class="mb-0 my-2">Sign Up</h3>
                         </div>
                         <div class="card-body">
-                            <form class="form" role="form" autocomplete="off">
+                            <form class="form" role="form" autocomplete="off" method="post">
+                                   {% csrf_token %}
                                 <div class="form-group">
-                                    <label for="inputName">USerName</label>
-                                    <input type="text" class="form-control" id="id_username" placeholder="full name">
+                                    <label for="inputName">UserName</label>
+                                    <input type="text" class="form-control" id="username" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputName">First Name</label>
+                                    <input type="text" class="form-control" id="first_name" name="first_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputName">Last Name</label>
+                                    <input type="text" class="form-control" id="last_name" name="last_name">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputEmail3">Email</label>
-                                    <input type="email" class="form-control" id="id_email"
+                                    <input type="email" class="form-control" id="email" name="email"
                                            placeholder="email@gmail.com" required="">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword3">Password</label>
-                                    <input type="password" class="form-control" id="id_password1"
+                                    <input type="password" class="form-control" id="password1" name="password1"
                                            placeholder="password" title="At least 6 characters with letters and numbers"
                                            required="">
                                 </div>
                                 <div class="form-group">
                                     <label for="inputVerify3">Verify</label>
-                                    <input type="password" class="form-control" id="id_password2"
+                                    <input type="password" class="form-control" id="password2"
                                            placeholder="password (again)" required="">
                                 </div>
                                 <div class="form-group">
